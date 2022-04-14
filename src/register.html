@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Menu login</title>
+    <title>Menu Register</title>
     <link rel="Icon" href="../image/book.svg">
-    <link rel="stylesheet" href="../style/login.css">
+    <link rel="stylesheet" href="../style/Register.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500&display=swap" rel="stylesheet">
@@ -21,14 +21,30 @@
             </div>        
         </div>
         <div class="right-border">
-           <div class="right-icon">
-               <img class="login-icon" src="../image/book.svg" alt="icon login">
-           </div>
-           <div class="right-title">
-               <h2 class="title-login">Login</h2>
-                <p class="title-subtext">Welcome back, please login to your account</p>
-           </div>
-           <div class="right-form">
+            <div class="right-icon">
+                <img class="login-icon" src="../image/book.svg" alt="icon login">
+            </div>
+            <div class="right-title">
+                <h2 class="title-login">Register</h2>
+                <p class="title-subtext">Welcome back, please register to create account</p>
+            </div>
+            <div class="right-form">
+               <div class="form form-username">
+                   <input class="form-input"
+                   id="username" 
+                   type="text"
+                   placeholder="username"
+                   >
+                   <label for="username">username</label>
+               </div>
+               <div class="form form-fullname">
+                   <input class="form-input"
+                   id="fullname" 
+                   type="text"
+                   placeholder="fullname"
+                   >
+                   <label for="password">fullname</label>
+               </div>
                 <div class="form form-login">
                     <input class="form-input" 
                     id="email"
@@ -45,22 +61,13 @@
                     >
                     <label for="password">password</label>
                 </div>
-                <div class="under-form">
-                    <div>
-                        <input type="checkbox" id="rememberMe" class="checkbox-text">
-                        <label for="rememberMe">Remember me</label>
-                    </div>
-                    <p>
-                        <a href="#" class="under-text">Forget password</a>
-                    </p>
-                </div>
-
+               
                 <div class="button-box">
-                    <a href="#">
-                        <button class="button button-login">Login</button>
-                    </a>
-                    <a href="../src/register.html">
+                    <a href="../src/login.html">
                         <button class="button button-signup">Sign up</button>   
+                    </a>
+                    <a href="../src/login.html">
+                        <button class="button button-login">Login</button>
                     </a>
                 </div>
                 <div class="credit-box">
