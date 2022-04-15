@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Menu</title>
+    <link rel="icon" href="../image/book.svg">
+    <link rel="stylesheet" href="../style/dashboard.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="dashboard-box">
+        <div class="sidebar-box" id="sidebar">
+            <div class="sidebar-image-box">
+                <img class="sidebar-image" src="../image/Tanjiro Kamado.jfif" alt="Profil-pict">
+                <h3 class="sidebar-name">Tanjiro Kamado</h3> 
+            </div>
+            <div class = sidebar-list>
+                <ul>
+                    <a href="#"><li>Explore</li></a>
+                    <a href="#"><li>History</li></a>
+                    <a href="#"><li>Add book</li></a>
+                   
+                </ul>
+
+            </div>
+        </div>
+        <div class="menu-box" id="menu">
+         <div class="navbar-box">
+            <button class="open-button" onclick="
+             if(document.getElementById(`sidebar`).style.width ==`30%`){
+                closeNav();
+            }else{
+                openNav();
+            }
+            ">☰</button>
+         </div>
+        </div>
+
+    </div>
+</body>
+
+<script src="../script/dashboard.js"></script>
+</html>
