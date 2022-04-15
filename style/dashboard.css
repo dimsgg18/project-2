@@ -10,7 +10,7 @@
 
 .dashboard-box{
     width: 100%;
-    height: 100vh;
+    height: 120vh;
     display: flex;
 }
 
@@ -22,7 +22,7 @@
 .sidebar-box{
     height: 100%;
     width:0%;
-    background-color: white;
+    background-color: #DFDFDE;
     display: block;
     transition: 0.4s;
 }
@@ -52,8 +52,9 @@
     display: flex;
     justify-content: left;
     align-items: center;
-    padding-left: 8rem;
+    padding-left: 4rem;
     padding-top: 2rem;
+    padding-right: 6rem;
 }
 
 .sidebar-list ul a{
@@ -72,8 +73,112 @@
 }
 
 /* bagian menu */
-.menu-box{
+ .menu-box{
     height: 100%;
     width: 100%;
-    background-color: aqua;
+    background-color: #F7F5F2;
 }
+
+.navbar-box{
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+    width: 100%;
+    background-color: #8D8DAA;
+}
+
+.open-button{
+    width: 5rem;
+    height: 100%;
+    font-size: 5rem;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.dropdown-box{
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn {
+    background: none;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .dropbtn:hover {
+      color: black;
+
+  }
+
+  .dropdown-categories {
+    display: none;
+    position: sticky;
+    left: 32rem;
+    background-color: #f1f1f1;
+    width: 10rem;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-categories a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  transition: 0.2s;
+  font-size: 1rem;
+}
+.dropdown-categories a:hover{
+    background-color: grey;
+}
+  .dropdown-time {
+    display: none;
+    position: sticky;
+    left: 55rem;
+    background-color: #f1f1f1;
+    width: 10rem;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-time a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    transition: 0.2s;
+    font-size: 1rem;
+  }
+  
+  .dropdown-time a:hover{
+      background-color: grey;
+  }
+  .show {display: inline-block;}
+
+
+
+.search-image{
+    position: relative;
+    left: 4rem;
+}
+  .input-search{
+      width: 25rem;
+      height: 4rem;
+      border-radius: 2rem;
+      padding-left: 5rem;
+      font-size: 18px;
+  }
+
+  .logo{
+      width: 6rem;
+      height: 100%;
+  }
+
