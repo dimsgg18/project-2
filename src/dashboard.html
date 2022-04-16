@@ -24,7 +24,7 @@
                 <ul>
                     <a href="#"><li>Explore</li></a>
                     <a href="#"><li>History</li></a>
-                    <a href="#"><li>Add book</li></a>
+                    <a href="#" id = "addModal"><li>Add book</li></a>
                     <a href="../src/login.html"><li>Log Out</li></a>
                 </ul>
             </div>
@@ -106,9 +106,35 @@
                     </div>
                   </div>
             </div>
+            <div id="myModal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <div class="form">
+                        <div class="form-modal ">
+                          <label for="url">Url Image</label>
+                          <input class="form-input form-url" 
+                          id="url"
+                          type="url"
+                          placeholder="url image"
+                          ></div>
+                        <div class="form-modal ">
+                          <label for="title">Title</label>
+                          <input class="form-input form-title" 
+                          id="title"
+                          type="text"
+                          placeholder="Title"
+                          ></div>
+                          <div class="form-modal ">
+                          <label for="description">Description</label>
+                          <input class="form-input form-description" 
+                          id="description"
+                          type="text"
+                          placeholder="description"
+                          ></div>
+                    </div>
+                </div>
+            </div>
         </div>
-
-    </div>
 </body>
 
 <script src="../script/dashboard.js"></script>

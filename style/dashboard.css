@@ -96,6 +96,10 @@
     cursor: pointer;
 }
 
+.open-button:hover{
+    color: black;
+}
+
 .dropdown-box{
     position: relative;
     display: inline-block;
@@ -167,6 +171,7 @@
 .search-image{
     position: relative;
     left: 4rem;
+    top: -6px;
 }
   .input-search{
       width: 25rem;
@@ -208,4 +213,68 @@
       padding-top: 15rem;
   }
   
- 
+ /* bagian modal */
+ .modal {
+  display: none;
+  position: fixed;
+  z-index: 1; 
+  padding: 100px 150px;
+  left: 0;
+  top: 0;
+  width: 100%; 
+    height: 100%;
+  overflow: auto; 
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.4); 
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 100%;
+  height: 100%;
+}
+
+/* The Close Button */
+.close {
+  color: red;
+  text-align: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* bagian isi modal */
+.form-modal{
+    display:flex;
+    align-items: center;
+    
+}
+.form-input{
+    width: 80%;
+    height: 5rem;
+    border: 2px solid black;
+    border-radius: 1rem;
+    padding-left: 1rem;
+    font-size: 1rem;
+    margin-top: 1rem;
+}
+.form-modal label{
+    font-size: 1rem;
+    padding-left: 1rem;
+    margin-right: 5rem;
+    width: 5rem;
+}
+
+.form-description{
+    height: 15rem;
+}
