@@ -15,10 +15,10 @@
     <div class="detail-box">
         <div class="detail-image-box">
             <div class="header-text-box">
-                <button class="header-btn">&larr;</button>
+                <a href="../src/dashboard.html"><button class="header-btn">&larr;</button></a>
                 <div class="header-text">
-                    <a href="#" id="editBook" class="text"> Edit</a>
-                    <a href="#" id="deleteBook" class="text">Delete</a>
+                    <button id="editBook" onclick="editBook()" class="text"> Edit</button>
+                    <button id="deleteBook" onclick="deleteBook()" class="text">Delete</button>
                 </div>
             </div>
             <div class="small-image">
@@ -38,7 +38,51 @@
             <span><p class="available">Available</p></span>
             <button class="borrow-btn">Borrow</button>
         </div>
-
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2>EDIT BOOK</h2>
+                    <span class="close">&times;</span>
+                </div>
+                <div class="form">
+                    <div class="form-modal ">
+                      <label for="url">Url Image</label>
+                      <input class="form-input form-url" 
+                      id="url"
+                      type="url"
+                      placeholder="url image"
+                      ></div>
+                    <div class="form-modal ">
+                      <label for="title">Title</label>
+                      <input class="form-input form-title" 
+                      id="title"
+                      type="text"
+                      placeholder="Title"
+                      ></div>
+                      <div class="form-modal ">
+                      <label for="description">Description</label>
+                     <textarea class="form-input form-description" name="description" id="description"
+                      cols="40" rows="30" placeholder="Description"></textarea>
+                      ></div>
+                      <div class="button-save">
+                        <button>Save</button>
+                      </div>
+                </div>
+            </div>
+        </div>
+        <div id="myModal2" class="modal2">
+            <div class="modal-content2">
+                <div class="modal-header2">
+                    <span class="close2">&times;</span>
+                </div>
+                <div class="modal-main">
+                    <p class="check-image">&check;</p>
+                    <p class="check-subtext">Data <b>Bara: Surat terakhir seorang pengelana</b> berhasil dihapus!</p>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
+
+<script src="../script/detail.js"></script>
 </html>
