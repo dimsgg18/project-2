@@ -235,7 +235,6 @@
   padding: 20px;
   border: 1px solid #888;
   width: 100%;
-  height: 100%;
 }
 
 /* The Close Button */
@@ -281,4 +280,22 @@
 
 .form-description{
     height: 15rem;
+}
+.button-save{
+    display: flex;
+    justify-content: right;
+    margin-right: 13rem;
+    margin-top: 4rem;
+}
+.button-save button{
+    width: 6rem;
+    height: 4rem;
+    font-size: 2rem;
+    background-color:#8D8DAA;
+    transition: 0.2s;
+}
+
+.button-save button:hover{
+    background-color: #888;
+    color:white
 }
